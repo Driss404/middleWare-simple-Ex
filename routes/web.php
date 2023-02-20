@@ -17,9 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+/*
 Route::get('/laravel', [UserController::class, 'showLaravel']);
 
-/*
 Route::get('/client', function(){
     return 'Je suis middleWare Clients';
 })->middleWare('clients');
@@ -29,4 +29,9 @@ Route::get('/groupMiddle', function() {
 })->middleware('connexion');
 */
 
+Route::get('/user', function() {
+    return '<h1>Nothing yet</h1> ';
+})->middleWare('user')
 
+
+?>
